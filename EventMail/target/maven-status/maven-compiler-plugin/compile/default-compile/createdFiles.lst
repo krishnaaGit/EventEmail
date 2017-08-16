@@ -1,0 +1,15 @@
+mum\ea\emailservice\EmailText.class
+mum\ea\domain\User.class
+mum\ea\listener\SendEventEmailListener.class
+mum\ea\domain\Category.class
+mum\ea\domain\Event.class
+mum\ea\main\Main.class
+mum\ea\domain\Comment.class
+mum\ea\domain\Building.class
+mum\ea\domain\Facility.class
+mum\ea\emailservice\EmailService.class
+mum\ea\domain\FacilityType.class
+mum\ea\domain\Room.class
+mum\ea\domain\EventGroup.class
+mum\ea\listener\SendCancelEventEmailListener.class
+mum\ea\domain\Role.class
