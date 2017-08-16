@@ -1,6 +1,14 @@
 package mum.ea.domain;
-public class Facility {
 
+import java.io.Serializable;
+import java.util.Date;
+
+public class Facility implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int id;
 	private String code;
 	private String name;
@@ -11,6 +19,8 @@ public class Facility {
 	private String description;
 
 	private boolean isAvailable;
+	private Date created;
+	private Date updated;
 
 	public Facility() {
 	}
@@ -87,6 +97,22 @@ public class Facility {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public Date getCreated() {
+		return created;
+	}
+
+	public void setCreated(Date created) {
+		this.created = created;
+	}
+
+	public Date getUpdated() {
+		return updated;
+	}
+
+	public void setUpdated(Date updated) {
+		this.updated = updated;
 	}
 
 }

@@ -1,15 +1,18 @@
 package mum.ea.domain;
 
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
-public class EventGroup {
+public class EventGroup implements Serializable {
 	private int id;
 	private String name;
 	private String description;
 	private Date createdOn;
 	
-	private Category category;
+	private List<Category> categoryList=new ArrayList<Category>();
 	
 	private User createdBy;
 	
@@ -43,10 +46,11 @@ public class EventGroup {
 	public void setCreatedOn(Date createdOn) {
 		this.createdOn = createdOn;
 	}
-	public Category getCategory() {
-		return category;
+	
+	public List<Category> getCategoryList() {
+		return categoryList;
 	}
-	public void setCategory(Category category) {
-		this.category = category;
+	public void setCategoryList(List<Category> categoryList) {
+		this.categoryList = categoryList;
 	} 
 }

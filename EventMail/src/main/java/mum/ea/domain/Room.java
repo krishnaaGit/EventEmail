@@ -1,5 +1,8 @@
 package mum.ea.domain;
-public class Room {
+
+import java.io.Serializable;
+
+public class Room implements Serializable{
 	private int id;	
 	private String number;
 	private String name;

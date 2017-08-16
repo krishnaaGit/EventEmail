@@ -16,6 +16,9 @@ public class Event implements Serializable {
 	private User eventOrganizer;
 	private int noOfPeople;
 	private boolean status;
+	private Category category;
+	private Date created;
+	private Date updated;
 
 	private List<Category> categories = new ArrayList<>();
 
@@ -106,5 +109,29 @@ public class Event implements Serializable {
 
 	public void setEventOrganizer(User eventOrganizer) {
 		this.eventOrganizer = eventOrganizer;
+	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
+	public Date getCreated() {
+		return created;
+	}
+
+	public void setCreated(Date created) {
+		this.created = created;
+	}
+
+	public Date getUpdated() {
+		return updated;
+	}
+
+	public void setUpdated(Date updated) {
+		this.updated = updated;
 	}
 }

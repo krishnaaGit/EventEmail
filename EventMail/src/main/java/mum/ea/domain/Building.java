@@ -1,8 +1,12 @@
 package mum.ea.domain;
 
+import java.io.Serializable;
 
-
-public class Building {
+public class Building implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int id;
 	private String code;
 	private String name;
